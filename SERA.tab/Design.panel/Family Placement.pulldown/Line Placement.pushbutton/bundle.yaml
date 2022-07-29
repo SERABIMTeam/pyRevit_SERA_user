@@ -1,0 +1,8 @@
+tooltip: >-
+  Array a selected family type on a selected model line.
+
+
+  Specify the number of families and offset from end points.
+
+
+  Note: This tool works with non-facebased/hosted families only. 

@@ -1,0 +1,8 @@
+tooltip: >-
+  Tessellate a selected surface with a 3-point adaptive family.
+
+
+  Specify a number of U and V divisions as well as minimum and maximum offsets.
+
+
+  Note: This tool works within either the Project environment, the Conceptual Mass environment, or the Generic Model Adaptive family template. 
