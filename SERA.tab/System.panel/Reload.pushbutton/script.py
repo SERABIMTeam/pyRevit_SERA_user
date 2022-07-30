@@ -8,22 +8,9 @@ from pyrevit.loader import sessionmgr
 from pyrevit.loader import sessioninfo
 
 import subprocess
-subprocess.call([r'\\local.serapdx.com\data\Programs\Autodesk\pyRevit\update-extensions.bat'])
+subprocess.call([r'\\local.serapdx.com\data\Support\ProgramData\AutoDesk\Revit\pyRevit\pyRevit_update_user.bat'])
 
 res = True
-# if EXEC_PARAMS.executed_from_ui:
-#     res = forms.alert('Reloading increases the memory footprint and is '
-#                       'automatically called by pyRevit when necessary.\n\n'
-#                       'pyRevit developers can manually reload when:\n'
-#                       '    - New buttons are added.\n'
-#                       '    - Buttons have been removed.\n'
-#                       '    - Button icons have changed.\n'
-#                       '    - Base C# code has changed.\n'
-#                       '    - Value of pyRevit parameters\n'
-#                       '      (e.g. __title__, __doc__, ...) have changed.\n'
-#                       '    - Cached engines need to be cleared.\n\n'
-#                       'Are you sure you want to reload?',
-#                       ok=False, yes=True, no=True)
 
 if res:
     logger = script.get_logger()
