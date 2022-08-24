@@ -1,7 +1,10 @@
 title:
   ru: Оторбразить размеры семейств
   fr_fr: Lister la taille des familles
-  en_us: List Family Sizes
+  en_us: >-
+  Family 
+  
+  Sizes
 tooltip:
   ru: Отображает все семейства и их размеры.
   fr_fr: Liste toutes les familles et leur taille
