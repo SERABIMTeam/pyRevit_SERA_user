@@ -1,4 +1,7 @@
-tooltip: Update the SERA tab to reflect the latest modifications.
+tooltip: >-
+  Update the SERA tab to reflect the latest modifications.
+
+  If new panels, pushbuttons or general UI modifications have been made, Revit must be relaunched after running this tool.
 engine:
   clean: true
 title:
