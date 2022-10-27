@@ -3,12 +3,16 @@
 # #pylint: disable=import-error,invalid-name,broad-except
 # from pyrevit import EXEC_PARAMS
 # from pyrevit import script
-# from pyrevit import forms
+import pyrevit
+from pyrevit import forms
 # from pyrevit.loader import sessionmgr
 # from pyrevit.loader import sessioninfo
 
 import subprocess
 subprocess.call([r'\\local.serapdx.com\data\Support\ProgramData\AutoDesk\Dynamo\Revit\Deploy\Dynamo_Package Update.bat'])
+
+pyrevit.forms.alert("Beep boop beep... \n\nDynamo now has everything it needs to run smoothly.", "Result")
+
 
 # res = True
 
