@@ -2,5 +2,5 @@ tooltip: Download the latest Dynamo dependencies for SERA scripts.
 engine:
   clean: true
 title:
-  en_us: 'Packages'
+  en_us: 'Dependencies'
 context: zero-doc
