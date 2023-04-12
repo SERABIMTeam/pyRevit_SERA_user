@@ -3,9 +3,9 @@ help_url: >-
 tooltip:
     Manage project keynotes.
 
-    Shift+Click
 
-    Reset window configurations and open.
+    Shift+Click: Reset window configurations and open.
 title:
     Manage
+
     Keynotes
