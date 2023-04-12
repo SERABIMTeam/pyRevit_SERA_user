@@ -4,9 +4,9 @@ tooltip:
     Manage project keynotes.
 
 
-    Shift+Click
-    Reset window configurations and open.
+    Shift+Click: Reset window configurations and open.
 title:
+  en_us: |-
     Manage
-
     Keynotes
+min_revit_version: 2014
