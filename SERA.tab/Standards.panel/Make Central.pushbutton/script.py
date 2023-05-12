@@ -1,5 +1,5 @@
 """Create SERA Worksets"""
-from pyrevit import revit, DB, UI
+from pyrevit import revit, DB, UI, forms
 
 def create_worksets(d, names):
     for name in names:
@@ -31,11 +31,7 @@ if not revit.doc.IsWorkshared:
     t.Commit()
     
     # create a taskdialog to report next steps and offer help
-    message = UI.TaskDialog("Worksets Added")
-    message.MainInstruction = "SERA standard worksets have been added to this file. Next Steps:\n\n1. Save file to project folder\n2. Select Collaborate > Relinquish All Mine\n3. Select File > Close\n\nOnce these steps are taken, you and your team can create new locals from this central model."
-    message.Show()
+    forms.alert("SERA standard worksets have been added to this file. Next Steps:\n\n1. Save file to project folder\n2. Select Collaborate > Relinquish All Mine\n3. Select File > Close\n\nOnce these steps are taken, you and your team can create new locals from this central model.","Worksets Added", warn_icon=False)
        
 else:
-    message = UI.TaskDialog("No Worksets Added")
-    message.MainInstruction = "The active file is already workshared. This command is for non-workshared files only."
-    message.Show()
+    forms.alert("The active file is already workshared. This command is for non-workshared files only.","No Worksets Added", warn_icon=False)
