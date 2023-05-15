@@ -8,7 +8,7 @@ from pyrevit.loader import sessionmgr
 from pyrevit.loader import sessioninfo
 
 import subprocess
-subprocess.call([r'\\local.serapdx.com\data\Support\ProgramData\AutoDesk\Revit\pyRevit\pyRevit_update_user.bat'])
+subprocess.call([r'\\local.serapdx.com\data\Support\ProgramData\AutoDesk\Revit\pyRevit\pyRevit_SERA_user\pyRevit_update_user.bat'])
 
 res = True
 
