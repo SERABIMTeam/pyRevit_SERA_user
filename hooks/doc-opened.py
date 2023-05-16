@@ -16,7 +16,8 @@ if EXEC_PARAMS.event_args.Document.IsWorkshared:
     modifiedCentralPath = centralPath.replace("\\\\local.serapdx.com\\library\\Projects\\","P:\\")
 
     try:
-        if  currentDocPath == modifiedCentralPath and not "Autodesk Docs" in currentDocPath:
+        # Autodesk Docs is in path name for Revit 2023 cloud projects, BIM 360 is in path name for Revit 2021 cloud projects
+        if  currentDocPath == modifiedCentralPath and not "Autodesk Docs" in currentDocPath and not "BIM 360" in currentDocPath:
             forms.alert(message,title,body)
     except Exception as e:
         pass
